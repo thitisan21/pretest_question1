@@ -1,0 +1,33 @@
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row {
+  min-width: 600px;
+  overflow: auto;
+  height: 500px;
+  width: 100%;
+  display: flex;
+
+  .columnFirst {
+    float: left;
+    padding: 10px;
+    width: 200px;
+    border: 1px solid black;
+  }
+  .columnSecond {
+    float: left;
+    padding: 10px;
+    min-width: 100px;
+    flex: 1 1 auto;
+    border: 1px solid black;
+  }
+  .columnThird {
+    float: left;
+    padding: 10px;
+    width: 300px;
+    border: 1px solid black;
+  }
+}
